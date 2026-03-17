@@ -3,4 +3,4 @@ function Name(){ // start function name with a capital letter
     <h3>Devendra with react </h3>
   );
 }
-export default Name;
+export default Name; 
