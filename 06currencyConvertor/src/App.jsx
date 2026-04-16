@@ -24,12 +24,15 @@ function App() {
   }
 
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
+    <div className="w-full h-screen flex justify-center items-center "
+    style={{
+            backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        }}>
 
-      <div className="w-full max-w-md bg-white/20 backdrop-blur-lg shadow-2xl rounded-2xl p-6 border border-white/30">
+      <div className="w-full max-w-md backdrop-blur-lg shadow-2xl rounded-2xl p-6 border-2 border-white">
 
-        <h1 className="text-2xl font-bold text-white text-center mb-6">
-          💱 Currency Converter
+        <h1 className="text-2xl font-bold text-white text-center ">
+           Currency Converter
         </h1>
 
         <form
@@ -40,8 +43,8 @@ function App() {
         >
 
           {/* FROM */}
-          <div className="mb-4">
-            <InputBox
+          <div className="mb-4 text-black font-semibold">
+            <InputBox 
               label="From"
               amount={amount}
               currencyOption={options}
@@ -56,14 +59,14 @@ function App() {
             <button
               type="button"
               onClick={swap}
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-1 rounded-lg shadow-md transition duration-200"
+              className="bg-white hover:bg-slate-300 text-black font-semibold px-4 py-1 rounded-lg shadow-md transition duration-200"
             >
-              🔄 Swap
+              Swap
             </button>
           </div>
 
           {/* TO */}
-          <div className="mb-4">
+          <div className="mb-4 text-black font-semibold">
             <InputBox
               label="To"
               amount={convertedAmount}
@@ -77,7 +80,7 @@ function App() {
           {/* BUTTON */}
           <button
             type="submit"
-            className="w-full bg-black hover:bg-gray-800 text-white py-3 rounded-xl font-semibold shadow-lg transition duration-200"
+            className="w-full mt-10 bg-white hover:bg-slate-300 text-black py-3 rounded-xl font-semibold shadow-lg transition duration-200"
           >
             Convert {from.toUpperCase()} → {to.toUpperCase()}
           </button>

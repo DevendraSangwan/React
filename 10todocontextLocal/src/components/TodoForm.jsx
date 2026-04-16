@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useTodo } from '../contexts/TodoContext';
-
+//now we make functionality for individual ToDo
 function TodoForm() {
     const [todo, setTodo] = useState("")
     const {addTodo} = useTodo()
@@ -8,10 +8,10 @@ function TodoForm() {
     const add = (e) => {
       e.preventDefault()
 
-      if (!todo) return
+      if (!todo) return alert("Give todo firstly")
 
       addTodo({ todo, completed: false})
-      setTodo("")
+      setTodo("") //todo add hone k baad dobara input feild empty string me change ho jaayegi
     }
 
   return (

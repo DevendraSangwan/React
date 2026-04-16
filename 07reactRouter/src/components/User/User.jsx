@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+// useParams se hm jo / ke baad title me likha hoga usse access kr skte h 
 
 function User() {
     const {userid} = useParams()

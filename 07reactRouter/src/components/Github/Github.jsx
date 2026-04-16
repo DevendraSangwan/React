@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData } from 'react-router-dom'   
+// useLoaderdata uses for jo data fecth krke API se aa rha h usse use krna
 
 function Github() {
     const data = useLoaderData()
@@ -15,6 +16,7 @@ function Github() {
     
   return (
     <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>Github followers: {data.followers}
+    {/* ye data. krke hmm api ke according data nikal rhe h bss show krane k liye */}
     <img src={data.avatar_url} alt="Git picture" width={300} />
     </div>
   )

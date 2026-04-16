@@ -9,6 +9,7 @@ function Layout() {
     <>
     <Header/>
     <Outlet /> 
+    {/* //MEANS sirf ye change hoga but header or footer kabhi change nhi honge  */}
     <Footer />
     </>
   )

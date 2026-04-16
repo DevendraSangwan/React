@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+// Link is used for navigation without page reload
 
 export default function Home() {
     return (
@@ -32,13 +33,13 @@ export default function Home() {
                 </div>
 
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
+                    <img className="w-100" src="https://marketplace.canva.com/EAFNFWNVous/1/0/1600w/canva-orange-watercolor-linktree-background-rOEQ08dE0ac.jpg" />
                 </div>
             </aside>
 
-            <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
-            </div>
+            {/* <div className="grid  place-items-center sm:mt-20"> */}
+                {/* <img className="w-100 h-100" src="https://img.pikbest.com/wp/202343/vibrant-orange-watercolor-gradient-background-in-abstract-red-and-tones_9986621.jpg!bw700" alt="image2" /> */}
+            {/* </div> */}
 
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
         </div>

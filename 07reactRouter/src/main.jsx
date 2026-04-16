@@ -33,13 +33,14 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
+    <Route path='/' element={<Layout />}> 
+    {/* yahan phle Layout ko inject krna pdega because usse me hm or pages add kre h  */}
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />
       <Route 
-      loader={githubInfoLoader}
+      loader={githubInfoLoader} //because ye useeffect s ebhi jldi kaam krta h even when we move cursor  on github then also
       path='github' 
       element={<Github />}
        />

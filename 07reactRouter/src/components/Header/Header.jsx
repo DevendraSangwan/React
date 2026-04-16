@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
-
+// Link is used for navigation without page reload
+// NavLink =>Same as Link + extra feature (active state)+It automatically adds active class
 export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0">

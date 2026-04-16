@@ -10,6 +10,7 @@ export default function ThemeBtn() {
             darkTheme()
         } else {
             lightTheme()
+            
         }
     }
     return (

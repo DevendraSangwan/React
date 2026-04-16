@@ -14,8 +14,8 @@ let myobj={
 let myarr=[1,2,3,4,5]
   return (
     <>
-   <h1 className='bg-green-400 text-black p-4  rounded-x '>Tailwind test</h1>
-<Card name="Devendra" newarr={myarr} /> 
+   <h1 className='bg-green-400 text-black p-4 rounded-x m-20  '>Tailwind test</h1>
+<Card username="Devendra" btnText={myarr} /> 
 {/* don't take any object in array and object form  */}
 <Card newobj={myobj}/> {/*maens simple object or array  doge to nhi lega but alag se object or array  bna kr doge to le lega */}
     {/* if we want then pass a variable name like direct "{name}", then we not need to write props on anywhere ...means after this we written only name in curly brackets, not props.name .*/}
@@ -23,5 +23,4 @@ let myarr=[1,2,3,4,5]
     </>
   )
 }
-
 export default App

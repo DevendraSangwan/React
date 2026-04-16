@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+// Link is used for navigation without page reload
 export default function Footer() {
     return (
         <footer className="bg-white border-y">
