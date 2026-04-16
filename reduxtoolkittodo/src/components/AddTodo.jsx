@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {useDispatch} from 'react-redux'
+// useDispatch ,reducer ko use krke store me chnages krta h 
 import {addTodo} from '../features/todo/todoSlice' 
 
 function AddTodo() {
@@ -10,7 +11,7 @@ function AddTodo() {
     const addTodoHandler = (e) => {
         e.preventDefault()
         dispatch(addTodo(input))
-        setInput('')
+        setInput('') //ending me dobara input feild empty ho jaayegi after adding todo
     }
 
   return (
